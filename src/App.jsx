@@ -15,7 +15,7 @@ useEffect(() => {
 document.documentElement.classList.toggle("dark", darkMode);
 }, \[darkMode]);
 
-return ( <div className="p-6 space-y-10 max-w-5xl mx-auto text-gray-800 dark:text-white bg-white dark:bg-gray-900 transition-colors duration-500"> <header className="text-center space-y-4"> <div className="flex justify-between items-center"> <h1 className="text-4xl font-bold text-blue-800 dark:text-blue-300">Tagur Krishna Nethipudi</h1>
+return ( <div className="p-6 space-y-10 max-w-5xl mx-auto text-gray-800 dark:text-white bg-gradient-to-br from-blue-100 to-purple-200 dark:from-gray-900 dark:to-black transition-all duration-500">Tagur Krishna Nethipudi</h1>
 \<button
 onClick={() => setDarkMode(!darkMode)}
 className="relative inline-flex items-center h-6 rounded-full w-11 bg-gray-300 dark\:bg-gray-700"
