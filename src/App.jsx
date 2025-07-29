@@ -1,11 +1,8 @@
-// Portfolio.jsx
-
-import DarkModeToggle from "@/components/DarkModeToggle";
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { Github, Linkedin, Mail, Download, Sun, Moon } from "lucide-react";
 
 export default function Portfolio() {
 const \[darkMode, setDarkMode] = useState(false);
@@ -14,24 +11,27 @@ useEffect(() => {
 document.documentElement.classList.toggle("dark", darkMode);
 }, \[darkMode]);
 
-return ( <div className={`p-6 space-y-10 max-w-5xl mx-auto text-gray-800 dark:text-white bg-gradient-to-br from-blue-100 to-purple-200 dark:from-gray-900 dark:to-black transition-all duration-500`}>
-  <header className="text-center space-y-2">
-    <div className="flex justify-between items-center">
-      <h1 className="text-4xl font-bold text-blue-800 dark:text-blue-300">Tagur Krishna Nethipudi</h1>
-      <button
-        onClick={() => setDarkMode(!darkMode)}
-        className="relative inline-flex items-center h-6 rounded-full w-11 bg-gray-300 dark:bg-gray-700 transition-all"
-      >
-        <span
-          className={`inline-block w-4 h-4 transform bg-white rounded-full transition-transform duration-300 ${
-            darkMode ? "translate-x-6" : "translate-x-1"
-          }`}
-        />
-      </button>
-    </div>
-    <p className="text-lg text-gray-700 dark:text-gray-300">Cybersecurity Analyst | Threat Hunter | SOC Automation</p> <div className="flex justify-center gap-4 mt-2"> <a href="mailto:tagur1420@gmail.com"><Mail className="w-5 h-5" /></a> <a href="https://www.linkedin.com/in/tagurkrishna/"><Linkedin className="w-5 h-5" /></a> <a href="https://github.com/Tagurkrishna"><Github className="w-5 h-5" /></a> <a href="/Tagur%20Krishna%20Resume%20CyberSecurity.pdf" download><Download className="w-5 h-5" /></a> </div> </header>
+return (
+\<div className={`relative p-6 space-y-10 max-w-5xl mx-auto text-gray-800 dark:text-white bg-gradient-to-br from-blue-100 to-purple-200 dark:from-gray-900 dark:to-black transition-all duration-500`}>
+{/\* Floating Toggle Button \*/} <div className="fixed bottom-6 right-6 z-50">
+\<button
+onClick={() => setDarkMode(!darkMode)}
+className="bg-gray-200 dark\:bg-gray-700 border-2 border-gray-300 dark\:border-gray-600 rounded-full p-2 shadow-lg hover\:scale-110 transition-all"
+\>
+{darkMode ? <Sun className="text-yellow-300" /> : <Moon className="text-gray-800" />} </button> </div>
 
 ```
+  <header className="text-center space-y-2">
+    <h1 className="text-4xl font-bold text-blue-800 dark:text-blue-300">Tagur Krishna Nethipudi</h1>
+    <p className="text-lg text-gray-700 dark:text-gray-300">Cybersecurity Analyst | Threat Hunter | SOC Automation</p>
+    <div className="flex justify-center gap-4 mt-2">
+      <a href="mailto:tagur1420@gmail.com"><Mail className="w-5 h-5" /></a>
+      <a href="https://www.linkedin.com/in/tagurkrishna/"><Linkedin className="w-5 h-5" /></a>
+      <a href="https://github.com/Tagurkrishna"><Github className="w-5 h-5" /></a>
+      <a href="/Tagur%20Krishna%20Resume%20CyberSecurity.pdf" download><Download className="w-5 h-5" /></a>
+    </div>
+  </header>
+
   <section>
     <h2 className="text-2xl font-semibold mb-2">About Me</h2>
     <p>
