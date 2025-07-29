@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download, Sun, Moon } from "lucide-react";
 
 export default function Portfolio() {
-const \[darkMode, setDarkMode] = useState(false);
+const [darkMode, setDarkMode] = useState(false);
 
 useEffect(() => {
 document.documentElement.classList.toggle("dark", darkMode);
