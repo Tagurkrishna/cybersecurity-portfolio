@@ -1,7 +1,6 @@
 // Portfolio.jsx
 
 import DarkModeToggle from "@/components/DarkModeToggle";
-
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -15,16 +14,22 @@ useEffect(() => {
 document.documentElement.classList.toggle("dark", darkMode);
 }, \[darkMode]);
 
-return ( <div className="p-6 space-y-10 max-w-5xl mx-auto text-gray-800 dark:text-white bg-gradient-to-br from-blue-100 to-purple-200 dark:from-gray-900 dark:to-black transition-all duration-500">Tagur Krishna Nethipudi</h1>
-\<button
-onClick={() => setDarkMode(!darkMode)}
-className="relative inline-flex items-center h-6 rounded-full w-11 bg-gray-300 dark\:bg-gray-700"
-\>
-\<span
-className={`inline-block w-4 h-4 transform bg-white rounded-full transition-transform duration-300 ${
-                darkMode ? "translate-x-6" : "translate-x-1"
-              }`}
-/> </button> </div> <p className="text-lg text-gray-700 dark:text-gray-300">Cybersecurity Analyst | Threat Hunter | SOC Automation</p> <div className="flex justify-center gap-4 mt-2"> <a href="mailto:tagur1420@gmail.com"><Mail className="w-5 h-5" /></a> <a href="https://www.linkedin.com/in/tagurkrishna/"><Linkedin className="w-5 h-5" /></a> <a href="https://github.com/Tagurkrishna"><Github className="w-5 h-5" /></a> <a href="/Tagur%20Krishna%20Resume%20CyberSecurity.pdf" download><Download className="w-5 h-5" /></a> </div> </header>
+return ( <div className={`p-6 space-y-10 max-w-5xl mx-auto text-gray-800 dark:text-white bg-gradient-to-br from-blue-100 to-purple-200 dark:from-gray-900 dark:to-black transition-all duration-500`}>
+  <header className="text-center space-y-2">
+    <div className="flex justify-between items-center">
+      <h1 className="text-4xl font-bold text-blue-800 dark:text-blue-300">Tagur Krishna Nethipudi</h1>
+      <button
+        onClick={() => setDarkMode(!darkMode)}
+        className="relative inline-flex items-center h-6 rounded-full w-11 bg-gray-300 dark:bg-gray-700 transition-all"
+      >
+        <span
+          className={`inline-block w-4 h-4 transform bg-white rounded-full transition-transform duration-300 ${
+            darkMode ? "translate-x-6" : "translate-x-1"
+          }`}
+        />
+      </button>
+    </div>
+    <p className="text-lg text-gray-700 dark:text-gray-300">Cybersecurity Analyst | Threat Hunter | SOC Automation</p> <div className="flex justify-center gap-4 mt-2"> <a href="mailto:tagur1420@gmail.com"><Mail className="w-5 h-5" /></a> <a href="https://www.linkedin.com/in/tagurkrishna/"><Linkedin className="w-5 h-5" /></a> <a href="https://github.com/Tagurkrishna"><Github className="w-5 h-5" /></a> <a href="/Tagur%20Krishna%20Resume%20CyberSecurity.pdf" download><Download className="w-5 h-5" /></a> </div> </header>
 
 ```
   <section>
