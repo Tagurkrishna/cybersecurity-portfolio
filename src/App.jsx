@@ -9,7 +9,7 @@ const [darkMode, setDarkMode] = useState(false);
 
 useEffect(() => {
 document.documentElement.classList.toggle("dark", darkMode);
-}, \[darkMode]);
+}, [darkMode]);
 
 return (
 \<div className={`relative p-6 space-y-10 max-w-5xl mx-auto text-gray-800 dark:text-white bg-gradient-to-br from-blue-100 to-purple-200 dark:from-gray-900 dark:to-black transition-all duration-500`}>
