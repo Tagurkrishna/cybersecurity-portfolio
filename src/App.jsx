@@ -12,9 +12,9 @@ document.documentElement.classList.toggle("dark", darkMode);
 }, [darkMode]);
 
 return (
-\<div className={`relative p-6 space-y-10 max-w-5xl mx-auto text-gray-800 dark:text-white bg-gradient-to-br from-blue-100 to-purple-200 dark:from-gray-900 dark:to-black transition-all duration-500`}>
+<div className={`relative p-6 space-y-10 max-w-5xl mx-auto text-gray-800 dark:text-white bg-gradient-to-br from-blue-100 to-purple-200 dark:from-gray-900 dark:to-black transition-all duration-500`}>
 {/\* Floating Toggle Button \*/} <div className="fixed bottom-6 right-6 z-50">
-\<button
+<button
 onClick={() => setDarkMode(!darkMode)}
 className="bg-gray-200 dark\:bg-gray-700 border-2 border-gray-300 dark\:border-gray-600 rounded-full p-2 shadow-lg hover\:scale-110 transition-all"
 \>
