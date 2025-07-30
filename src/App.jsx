@@ -17,7 +17,7 @@ return (
 <button
 onClick={() => setDarkMode(!darkMode)}
 className="bg-gray-200 dark\:bg-gray-700 border-2 border-gray-300 dark\:border-gray-600 rounded-full p-2 shadow-lg hover\:scale-110 transition-all"
-\>
+>
 {darkMode ? <Sun className="text-yellow-300" /> : <Moon className="text-gray-800" />} </button> </div>
 
 ```
